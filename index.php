@@ -69,10 +69,10 @@ var_dump($hotels);
         foreach ($hotels as $key => $hotel) { ?>
             <tr>
                 <td> <?php echo $hotel['name']; ?></td>
-                <td> <?php echo $hotel['name']; ?></td>
-                <td> <?php echo $hotel['name']; ?></td>
-                <td> <?php echo $hotel['name']; ?></td>
-                <td> <?php echo $hotel['name']; ?></td>
+                <td> <?php echo $hotel['description']; ?></td>
+                <td> <?php echo $hotel['parking']; ?></td>
+                <td> <?php echo $hotel['vote']; ?></td>
+                <td> <?php echo $hotel['distance_to_center']; ?></td>
             </tr>
         <?php } ?>
     </table>
