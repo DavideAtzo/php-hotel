@@ -65,12 +65,12 @@ var_dump($hotels);
                 <th>distance_to_center</th>
             </tr>
         </thead>
-        <tr>
-            <?php
-            foreach ($hotels as $key => $hotel) { ?>
+        <?php
+        foreach ($hotels as $key => $hotel) { ?>
+            <tr>
                 <td> <?php echo $hotel['name']; ?></td>
-            <?php } ?>
-        </tr>
+            </tr>
+        <?php } ?>
     </table>
 
 </body>
