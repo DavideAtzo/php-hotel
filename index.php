@@ -39,9 +39,6 @@ $hotels = [
     ],
 
 ];
-var_dump($hotels);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +53,7 @@ var_dump($hotels);
 </head>
 
 <body>
-    <table class="table">
+    <table class="table table-info">
         <thead>
             <tr>
                 <th scope="col">name</th>
