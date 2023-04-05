@@ -39,6 +39,7 @@ $hotels = [
     ],
 
 ];
+
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +54,14 @@ $hotels = [
 </head>
 
 <body>
+    <div class="container">
+        <form action="index.php">
+            <div class="mt-3">
+                <input type="text" name="parking" class="form-control" id="parking" placeholder="Fai la tua ricerca">
+                <input class="btn btn-primary my-2" type="submit" value="Cerca">
+            </div>
+        </form>
+    </div>
     <table class="table table-info">
         <thead>
             <tr>
