@@ -56,14 +56,14 @@ var_dump($hotels);
 </head>
 
 <body>
-    <table>
+    <table class="table">
         <thead>
             <tr>
-                <th>name</th>
-                <th>description</th>
-                <th>parking</th>
-                <th>vote</th>
-                <th>distance_to_center</th>
+                <th scope="col">name</th>
+                <th scope="col">description</th>
+                <th scope="col">parking</th>
+                <th scope="col">vote</th>
+                <th scope="col">distance_to_center</th>
             </tr>
         </thead>
         <tbody>
