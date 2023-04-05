@@ -51,6 +51,7 @@ var_dump($hotels);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>PHP Hotel</title>
 </head>
 
@@ -65,16 +66,18 @@ var_dump($hotels);
                 <th>distance_to_center</th>
             </tr>
         </thead>
-        <?php
-        foreach ($hotels as $key => $hotel) { ?>
-            <tr>
-                <td> <?php echo $hotel['name']; ?></td>
-                <td> <?php echo $hotel['description']; ?></td>
-                <td> <?php echo $hotel['parking']; ?></td>
-                <td> <?php echo $hotel['vote']; ?></td>
-                <td> <?php echo $hotel['distance_to_center']; ?></td>
-            </tr>
-        <?php } ?>
+        <tbody>
+            <?php
+            foreach ($hotels as $key => $hotel) { ?>
+                <tr>
+                    <td> <?php echo $hotel['name']; ?></td>
+                    <td> <?php echo $hotel['description']; ?></td>
+                    <td> <?php echo $hotel['parking']; ?></td>
+                    <td> <?php echo $hotel['vote']; ?></td>
+                    <td> <?php echo $hotel['distance_to_center']; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
     </table>
 
 </body>
