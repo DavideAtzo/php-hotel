@@ -41,13 +41,6 @@ $hotels = [
 ];
 var_dump($hotels);
 
-foreach ($hotels as $hotelClass) {
-    foreach ($hotelClass as $hotel) {
-        echo $hotel;
-        echo '<br>';
-    }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -61,9 +54,17 @@ foreach ($hotels as $hotelClass) {
 </head>
 
 <body>
-
-
-
+    <table>
+        <tr>
+            <?php
+            foreach ($hotels as $hotel) { ?>
+                <th> <?php  echo $hotel['name']; ?></th>
+                <?php } ?>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
 
 </body>
 
